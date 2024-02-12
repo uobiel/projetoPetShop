@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Pet Zen</title>
+    <style>
+        /* Adicione seu estilo CSS aqui */
+    </style>
+</head>
+
+<body onload="abreModal('Esta landing page é apenas uma amostra de conhecimentos em programação. Nenhuma funcionalidade deve funcionar.')">
+
+    <div class="pagina">
+
+        <div class="header row">
+            <div class="nome-empresa row">
+                <p class="preto">Pet</p>
+                <p class="laranja">Zen</p>
+            </div>
+
+            <div class="menus row col s12 m4">
+                <a href="#apresentacao" class="menu-link" data-target="apresentacao">Home</a>
+                <a href="#sobre" class="menu-link" data-target="sobre">Sobre</a>
+                <a href="#servicos" class="menu-link" data-target="servicos">Serviços</a>
+                <a href="#nosso-app" class="menu-link" data-target="nosso-app">Nosso App</a>
+                <a onclick="abreModal('BLOG em construção!')" href="#" class="menu-link">Blog</a>
+            </div>
+
+            <button class="row col s12 m4" class="acessar-home" id="acessar" onclick="abreModal('Funcionalidade em Desenvolvimento.')">Acessar</button>
+        </div>
+
+        <section id="apresentacao" class="apresentacao row">
+
+            <div class="principal">
+                <div class="conteudo">
+                    <p class="preto">O melhor suporte no cuidado para seu</p>
+                    <p class="laranja">melhor amigo</p>
+
+                    <p class="texto">
+                        Aqui, você encontrará respostas para todas as suas dúvidas, desde a escolha da melhor ração até
+                        dicas essenciais para garantir o bem-estar do seu companheiro peludo.
+                    </p>
+
+                    <button onclick="abreModal('Funcionalidade em Desenvolvimento.')" id="acessar">Acessar</button>
+
+                </div>
+            </div>
+
+            <div class="ilustracao col s12 m8">
+
+            </div>
+
+
+        </section>
+
+        <section id="sobre" class="mais">
+
+            <div class="linha-texto">
+                <p>Saiba dicas essenciais para dar o conforto que o seu pet merece!</p>
+            </div>
+
+            <div class="linha">
+
+                <div class="card z-depth-2">
+                    <div class="icone-card1">
+                    </div>
+
+                    <p class="texto-card">Adestramento</p>
+                    <p>Corrija comportamentos, eduque, divirta-se e fortaleça a relação com seu pet.</p>
+                </div>
+
+                <div class="card z-depth-2">
+                    <div class="icone-card2">
+
+                    </div>
+                    <p class="texto-card">Alimentação</p>
+                    <p>Saiba dietas equilibradas, aprenda sobre dietas caseiras, escolha a melhor ração e muito mais.</p>
+                </div>
+
+                <div class="card z-depth-2">
+                    <div class="icone-card3">
+
+                    </div>
+                    <p class="texto-card">Adoção</p>
+                    <p>Descubra nomes encantadores, dicas, o que fazer e tudo o que você       precisa saber para adotar um pet.</p>
+                </div>
+
+            </div>
+
+            <div class="linha">
+
+                <div class="card z-depth-2">
+                    <div class="icone-card1">
+                    </div>
+
+                    <p class="texto-card">Saúde</p>
+                    <p>Aprenda tudo o que precisa saber sobre a saúde do seu pet e proteja seu pet de doenças.</p>
+                </div>
+
+                <div class="card z-depth-2">
+                    <div class="icone-card2">
+
+                    </div>
+                    <p class="texto-card">Cuidados</p>
+                    <p>Entenda o cio, gestação, higiene dental, cuidado das orelhas e muito mais.</p>
+                </div>
+
+                <div class="card z-depth-2">
+                    <div class="icone-card3">
+
+                    </div>
+                    <p class="texto-card">Curiosidades</p>
+                    <p>Aprenda dicas, descubra espécies em perigo de extinção, saiba diversas raças e muito mais. </p>
+                </div>
+
+            </div>
+            <div id="servicos"></div>
+        </section>
+
+        <section class="appc">
+
+            <div class="app-container">
+                <div class="app-texto">
+                    <div class="textos">
+                        <p class="texto-card">Você e o seu pet ainda mais conectados!</p>
+                        <p>Nosso app simplifica a vida do tutor, registrando o histórico de saúde do pet, gerenciando gastos mensais e conectando você a uma comunidade animada de pais de pets.</p>
+                    </div>
+                    <button onclick="abreModal('Funcionalidade em Desenvolvimento.')" id="acessar">Acessar</button>
+                </div>
+
+                <div class="app-img">
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="nosso-app" class="aplicativo">
+            <div class="aplicativo-img box">
+
+            </div>
+
+            <div class="info-app box">
+                <p id="download-app-texto">BAIXE O NOSSO APP!</p>
+                <div class="secao-app">
+                    <p class="texto-app relogio">Alertas e lembretes inteligentes</p>
+                    <p class="sobre-app">Receba notificações personalizadas para vacinas, consultas veterinárias e outras necessidades, garantindo que você nunca perca um cuidado essencial para o seu pet.</p>
+                </div>
+
+                <div class="secao-app">
+                    <p class="texto-app interface">Interface amigável para todos</p>
+                    <p class="sobre-app">Nosso App é projetada para ser intuitiva, permitindo que todos, independentemente da experiência digital, possam aproveitar ao máximo os recursos do aplicativo.</p>
+                </div>
+
+                <div class="secao-app">
+                    <p class="texto-app design">Design intuitivo e atraente</p>
+                    <p class="sobre-app">Desfrute de uma interface visualmente agradável e fácil de navegar, projetada para proporcionar uma experiência fluida e atraente a cada usuário.</p>
+                </div>
+
+                <button onclick="abreModal('Funcionalidade em Desenvolvimento.')" id="botao-download">Download App</button>
+            </div>
+        </section>
+    </div>
+
+    <div class="fade">
+        <div class="modal-fade">
+           <div class="img-modal">
+                <img src="images/Icon[Modal].svg" alt="">
+           </div>
+
+           <div class="texto-modal">
+               <p></p>
+           </div>
+
+           <div class="centraliza"><input id="fecha-modal" type="button" value="Fechar"></div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.menu-link').forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Evita o comportamento padrão de seguir o link
+                    var targetId = link.getAttribute('href').substring(1); // Obtemos o ID da seção do atributo href
+                    var targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+
+
+        const fechaModal = document.querySelector('#fecha-modal');
+            const modal = document.querySelector('.fade');
+            
+            function abreModal(texto){
+                const textoModal = document.querySelector('.texto-modal');
+                textoModal.innerHTML = `<p>${texto}</p>`
+                modal.style.display = 'flex';
+            }
+
+            fechaModal.addEventListener('click', function(){
+                modal.style.display = 'none';
+        })
+
+    </script>
+
+</body>
+
+</html>

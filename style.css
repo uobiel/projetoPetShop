@@ -1,0 +1,475 @@
+@keyframes pagina {
+    0%{position: absolute; top: -500px;}
+    100%{position: absolute; top: 0;}
+}
+
+@keyframes animacaoInput {
+    0%{background-color: #FBBC05; transform: scale(1.08);}
+    100%{background-color: #fbbd05b1; transform: scale(1.1);}
+}
+
+@keyframes card {
+    50%{transform: scale(1.0);}
+    100%{transform: scale(1.1);}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+
+.pagina {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    animation-name: pagina;
+    animation-duration: 2s;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+.menus {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.menus a:hover {
+    color: #FBBC05;
+    font-weight: bold;
+}
+
+.nome-empresa {
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.laranja {
+    color: #FBBC05;
+}
+
+#acessar {
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    background-color: #FBBC05;
+    color: white;
+    width: 100%;
+    max-width: 130px;
+    cursor: pointer;
+}
+
+#acessar:hover {
+    background-color: #fbbd05b1;
+    animation-name: animacaoInput;
+    animation-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+.apresentacao {
+    width: 90%;
+    display: flex;
+    height: calc(100vh - 100px); 
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.principal {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.principal button {
+    font-size: medium;
+    max-width: 200px !important;
+}
+
+.conteudo {
+    width: 90%;
+    margin-bottom: 200px;
+}
+
+.ilustracao {
+    width: 50%;
+    height: 100%;
+    background-image: url('images/ilustration.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.mais {
+    width: 100%;
+}
+
+.linha-texto {
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linha-texto p {
+    width: 700px;
+    font-weight: bold;
+}
+
+.linha {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.card {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px !important;
+}
+
+.icone-card1, .icone-card2, .icone-card3 {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.icone-card1 {
+    background-image: url('images/Icon.svg');
+}
+
+.icone-card2 {
+    background-image: url('images/Icon1.svg');
+}
+
+.icone-card3 {
+    background-image: url('images/Icon2.svg');
+}
+
+.icone-card4 {
+    background-image: url('images/Icon3.svg');
+}
+
+.icone-card5 {
+    background-image: url('images/Icon4.svg');
+}
+
+.icone-card6 {
+    background-image: url('images/Icon5.svg');
+}
+
+.texto-card {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appc {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.app-container {
+    background-color: #EDE8;
+    width: 90%;
+    height: 300px;
+    border-radius: 8px;
+    padding: 50px;
+    display: flex;
+}
+
+.app-texto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-texto p[class = "texto-card"] {
+    font-size: 30px;
+}
+
+.app-img {
+    background-image: url('images/ilustration4.svg');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 300%;
+    position: relative;
+    top: -150px;
+    margin: 20px;
+}
+
+.card:hover {
+    animation-name: card;
+    animation-duration: 1s;
+    cursor: default;
+    transform: scale(1.1);
+}
+
+.aplicativo {
+    width: 100%;
+    height: 500px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 40%;
+    height: 100%;
+}
+
+.aplicativo-img {
+    background-image: url('images/app.svg');
+    background-size: auto 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#download-app-texto {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.texto-app {
+    font-weight: bold;
+}
+
+.secao-app {
+    margin: 20px 0px 20px 0px;
+}
+
+.sobre-app {
+    color: #3232329a;
+    margin-top: 10px;
+}
+
+.relogio {
+    background-image: url('images/relogio.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-left: 30px;
+}
+
+.interface {
+    background-image: url('images/interface.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-left: 30px;
+}
+
+.design {
+    background-image: url('images/design.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-left: 30px;
+}
+
+#botao-download {
+    background-image: url('images/maca.svg');
+    background-repeat: no-repeat;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-position: 95%;
+    padding: 20px 40px 20px 20px;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 3px black;
+    cursor: pointer;
+}
+
+#botao-download:hover {
+    transform: scale(0.9);
+}
+
+.fade {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.297);
+    top: 0;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-fade {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.modal-fade p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img-modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centraliza {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.centraliza input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 1px 1px 4px black;
+    cursor: pointer;
+}
+
+.centraliza input:hover {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 300px;
+        position: static;
+    }
+    
+    .apresentacao {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        height: none;
+    }
+
+    .principal {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteudo p {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .ilustracao {
+        background-size: auto 100%;
+    }
+
+    .linha {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app-img {
+        display: none;
+    }
+
+    .app-texto p {
+        font-size: 15px !important;
+    }
+    
+    .app-texto {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aplicativo {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .info-app {
+        width: 90%;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    #botao-download {
+        margin-bottom: 50px;
+    }
+
+    .aplicativo-img {
+        display: none;
+    }
+
+    .appc {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .modal-fade {
+        width: 90%;
+        margin: 20px;
+    }
+}
